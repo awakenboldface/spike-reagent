@@ -9,7 +9,7 @@ if(typeof spike_reagent.core.app_state !== 'undefined'){
 } else {
 spike_reagent.core.app_state = reagent.core.atom.call(null,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"text","text",-1790561697),"New York Yankees is American baseball team."], null));
 }
-spike_reagent.core.url = "http://35.186.236.218/";
+spike_reagent.core.url = "https://spike-ring.work/";
 if(typeof spike_reagent.core.output_state !== 'undefined'){
 } else {
 spike_reagent.core.output_state = reagent.core.atom.call(null,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"text","text",-1790561697),""], null));
@@ -18,7 +18,7 @@ spike_reagent.core.nativize = (function spike_reagent$core$nativize(){
 return ajax.core.POST.call(null,spike_reagent.core.url,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"handler","handler",-195596612),(function (x){
 cljs.core.println.call(null,x);
 
-return cljs.core.reset_BANG_.call(null,spike_reagent.core.output_state,cljs.reader.read_string.call(null,x));
+return cljs.core.reset_BANG_.call(null,spike_reagent.core.output_state,cljs.reader.read_string(x));
 }),new cljs.core.Keyword(null,"headers","headers",-835030129),new cljs.core.PersistentArrayMap(null, 1, ["Content-Type","application/edn"], null),new cljs.core.Keyword(null,"body","body",-2049205669),cljs.core.pr_str.call(null,cljs.core.deref.call(null,spike_reagent.core.app_state)),new cljs.core.Keyword(null,"format","format",-1306924766),new cljs.core.Keyword(null,"raw","raw",1604651272)], null));
 });
 spike_reagent.core.hello_world = (function spike_reagent$core$hello_world(){
@@ -31,4 +31,4 @@ spike_reagent.core.on_js_reload = (function spike_reagent$core$on_js_reload(){
 return null;
 });
 
-//# sourceMappingURL=core.js.map?rel=1514676536865
+//# sourceMappingURL=core.js.map?rel=1514680055327

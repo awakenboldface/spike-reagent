@@ -11,7 +11,7 @@
 (defonce app-state (atom {:text "New York Yankees is American baseball team."}))
 
 (def url
-  "http://35.186.236.218/")
+  "https://spike-ring.work/")
 
 ;(def url
 ;  "http://localhost:8080")
